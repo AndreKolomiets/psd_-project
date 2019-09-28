@@ -1,21 +1,52 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 body {
 background: white;
     margin: 0;
     padding: 0;
+    border-top: 8px solid #f2ac04;
 }
 
 #container {
     max-width: 1000px;
     margin: auto;
 }
-header {
-    display: flex;
-    flex-wrap: wrap;
+header, #header-top {
+display: flex;
+flex-wrap: wrap;
+}
+
+#header-top {
+    padding: 40px 0;
+    width: 100%;
+}
+
+#header-text {
+    padding-left: 25 px;
+}
+
+#header-text h4 {
+    color: #f2ac04;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 #logo {
     position:relative;
+    width: 245px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content: flex-end;
+    padding-right: 35px;
+    border-right: 1px solid #cac8c5;
+
+
 }
+
 
 #logo::before,#logo::after {
     content: "";
@@ -24,16 +55,17 @@ header {
     width: 55px;
     border-radius: 50%;
     display: block;
+    top: 13px;
 }
 #logo::before{
-    background:#f8d277 ;
+    background:#f8d277;
+    position: absolute;
+    left: 0;
     }
 #logo::after{
     background: #f2ac04;
     position: absolute;
-    top:5px;
-    left:5px;
-
+    left:15px;
     }
 
 
