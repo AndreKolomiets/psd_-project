@@ -56,7 +56,7 @@ header , #header-top {
     margin: 0 0 17px 0;
 }
 
-#logo {
+#logo, #logo-footer {
     position: relative;
     width: 245px;
     display: flex;
@@ -67,7 +67,8 @@ header , #header-top {
     border-right: 2px solid #cac8c5;
 }
 
-#logo::before , #logo::after {
+#logo::before , #logo::after,
+#logo-footer::before , #logo-footer::after {
     content: "";
     height: 55px;
     width: 55px;
@@ -76,12 +77,12 @@ header , #header-top {
     top: 0px;
     
 }
-#logo::before {
+#logo::before, #logo-footer::before  {
     background: #f8d277;
     position: absolute;
     left: 0;
 }
-#logo::after {
+#logo::after, #logo-footer::after {
     background: #f2ac04;
     position: absolute;
     left: 15px;
